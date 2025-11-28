@@ -1,0 +1,10 @@
+name: hello shivam
+on:
+push:
+branches: master
+jobs:
+says-hello:
+runs-on: ubuntu-latest
+steps:
+-name: hello shivam
+run: echo "hello shivam"
