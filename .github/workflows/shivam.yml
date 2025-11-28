@@ -1,10 +1,14 @@
-name: hello shivam
+name: Hello World Workflow
+
 on:
-push:
-branches: master
+  push:
+    branches:
+      - main
+
 jobs:
-says-hello:
-runs-on: ubuntu-latest
-steps:
--name: hello shivam
-run: echo "hello shivam"
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Hello World
+        run: echo "Hello-shivam!"
